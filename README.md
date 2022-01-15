@@ -1,6 +1,6 @@
 # Nx Docker-Compose Example
 
-This repo is intended to demonstrate how we can leverage docker-compose to spin up a dev environment that consists of multiple Apps at one go.
+This repo is intended to demonstrate how we can leverage [docker-compose](https://docs.docker.com/compose/) with [Nx Monorepo](https://nx.dev/) to spin up a single dev environment that consists of multiple Apps in one go.
 
 From a dev perspective, the expectation for this will be:
 
