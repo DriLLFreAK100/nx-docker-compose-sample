@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  nx-app-base:
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - DEV_PLATFORM=DOCKER
+    volumes:
+      - ./:/app
+      - /app/node_modules

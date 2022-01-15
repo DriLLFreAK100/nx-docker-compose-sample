@@ -2,31 +2,19 @@ version: '3'
 
 services:
   nx-app-1:
+    extends:
+      file: docker-compose.base.yml
+      service: nx-app-base
     container_name: nx-app-1
-    restart: always
-    build:
-      context: .
-      dockerfile: Dockerfile
-    environment:
-      - DEV_PLATFORM=DOCKER
-    volumes:
-      - ./:/app
-      - /app/node_modules
     command: npm run app-1:dev:docker
     ports:
       - 4201:4200
 
   nx-app-2:
+    extends:
+      file: docker-compose.base.yml
+      service: nx-app-base
     container_name: nx-app-2
-    restart: always
-    build:
-      context: .
-      dockerfile: Dockerfile
-    environment:
-      - DEV_PLATFORM=DOCKER
-    volumes:
-      - ./:/app
-      - /app/node_modules
     command: npm run app-2:dev:docker
     ports:
       - 4202:4200
