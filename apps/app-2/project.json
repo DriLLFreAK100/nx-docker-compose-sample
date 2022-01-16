@@ -23,7 +23,7 @@
         ],
         "styles": [],
         "scripts": [],
-        "webpackConfig": "webpack.config.js"
+        "webpackConfig": ".webpack/react-dev.config.js"
       },
       "configurations": {
         "production": {

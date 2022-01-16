@@ -1,8 +1,4 @@
-const nrwlConfig = require("@nrwl/react/plugins/webpack.js");
-
-module.exports = (config, context) => {
-  nrwlConfig(config); // first call it so that it @nrwl/react plugin adds its configs,
-
+const withWatchPoll = (config) => {
   if (process.env.DEV_PLATFORM === 'DOCKER') {
     // Make Hot Module Reload (HMR) works
     // Use polling mechanism to handle Filesystem disparities among diff OS
@@ -20,7 +16,7 @@ module.exports = (config, context) => {
     };
   }
 
-  return {
-    ...config,
-  };
-};
+  return config;
+}
+
+module.exports = { withWatchPoll }

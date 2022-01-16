@@ -23,7 +23,7 @@
         ],
         "styles": [],
         "scripts": [],
-        "webpackConfig": "webpack.config.js"
+        "webpackConfig": ".webpack/react-dev.config.js"
       },
       "configurations": {
         "production": {
@@ -46,7 +46,8 @@
       "executor": "@nrwl/web:dev-server",
       "options": {
         "buildTarget": "app-1:build",
-        "hmr": true
+        "hmr": true,
+        "proxyConfig": "apps/app-1/proxy.conf.json"
       },
       "configurations": {
         "production": {
