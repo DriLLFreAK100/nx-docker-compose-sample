@@ -9,10 +9,9 @@
       "type": "node",
       "request": "attach",
       "port": 4311,
-      "address": "127.0.0.1",
+      "address": "localhost",
       "localRoot": "${workspaceFolder}",
-      "remoteRoot": "/app",
-      "protocol": "inspector"
+      "remoteRoot": "/app"
     }
   ]
 }
