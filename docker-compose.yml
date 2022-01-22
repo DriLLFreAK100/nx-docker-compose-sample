@@ -17,6 +17,14 @@ services:
     ports:
       - 4202:4200
 
+  app-3:
+    extends:
+      file: docker-compose.base.yml
+      service: nx-app-base
+    command: npm run app-3:dev:docker
+    ports:
+      - 4203:4200
+
   api-1:
     extends:
       file: docker-compose.base.yml

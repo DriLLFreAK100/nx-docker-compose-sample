@@ -5,6 +5,7 @@
   "scripts": {
     "app-1:dev:docker": "nx serve app-1 --host=0.0.0.0",
     "app-2:dev:docker": "nx serve app-2 --host=0.0.0.0",
+    "app-3:dev:docker": "nx serve app-3 --host=0.0.0.0 --poll 5000",
     "api-1:dev:docker": "nx serve api-1 --host=0.0.0.0 --port=4311",
     "start": "nx serve",
     "build": "nx build",
