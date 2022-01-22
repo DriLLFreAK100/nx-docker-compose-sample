@@ -37,3 +37,6 @@ services:
     ports:
       - 4310:3333 # API Entry port
       - 4311:4311 # Server Debugging port
+
+volumes:
+  mono-node-modules: null

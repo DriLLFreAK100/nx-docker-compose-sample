@@ -10,4 +10,4 @@ services:
       - DEV_PLATFORM=DOCKER
     volumes:
       - ./:/app
-      - /app/node_modules
+      - mono-node-modules:/app/node_modules
