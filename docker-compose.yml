@@ -1,6 +1,7 @@
 version: '3'
 
 services:
+  # React App
   app-1:
     extends:
       file: docker-compose.base.yml
@@ -9,6 +10,7 @@ services:
     ports:
       - 4201:4200
 
+  # React App
   app-2:
     extends:
       file: docker-compose.base.yml
@@ -17,6 +19,7 @@ services:
     ports:
       - 4202:4200
 
+  # Angular App
   app-3:
     extends:
       file: docker-compose.base.yml
@@ -25,6 +28,7 @@ services:
     ports:
       - 4203:4200
 
+  # Express App
   api-1:
     extends:
       file: docker-compose.base.yml
