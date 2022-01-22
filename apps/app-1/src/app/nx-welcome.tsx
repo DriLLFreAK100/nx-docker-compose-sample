@@ -417,8 +417,8 @@ export function NxWelcome({ title }: { title: string }) {
         <div className="container">
           <div id="welcome">
             <h1>
-              <span> Hello there, This is app-1</span>
-              Welcome {title} 👋
+              <span> Hello there,</span>
+              Welcome {title} (React) 👋
             </h1>
           </div>
 
