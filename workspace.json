@@ -2,11 +2,11 @@
   "version": 2,
   "projects": {
     "api-1": "apps/api-1",
-    "app": "apps/app-3",
     "app-1": "apps/app-1",
     "app-1-e2e": "apps/app-1-e2e",
     "app-2": "apps/app-2",
     "app-2-e2e": "apps/app-2-e2e",
+    "app-3": "apps/app-3",
     "app-3-e2e": "apps/app-3-e2e"
   }
 }
